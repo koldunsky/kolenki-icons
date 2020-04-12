@@ -1,0 +1,449 @@
+@import "_base";
+
+$coral: coral;
+$green: #2a7e70;
+
+.icon1 {
+  .koleno {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -5%;
+    left: 12%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #2a7e70 inset;
+    background: lighten(#2a7e70, 20%);
+    opacity: 0.3;
+    transform: rotate(60deg);
+    transform-origin: 0 0;
+  }
+
+  .koleno2 {
+    top: 40%;
+    left: 40%;
+    display: none;
+  }
+
+  .koleno3 {
+    top: 60%;
+    left: 50%;
+    display: none;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background: coral;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: none;
+  }
+  .dot {
+    background: coral;
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    position: absolute;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+    opacity: 0.8;
+    // display: none;
+  }
+
+  .frame {
+    width: 66.666%;
+    height: 15%;
+    border: 4px solid #2a7e70;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.icon2 {
+
+  .koleno {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -5%;
+    left: 12%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #2a7e70 inset;
+    background: lighten(#2a7e70, 20%);
+    opacity: 0.3;
+    transform: rotateZ(60deg);
+    transform-origin: 0 0;
+  }
+
+  .koleno2 {
+    top: 40%;
+    left: 40%;
+    display: none;
+  }
+
+  .koleno3 {
+    top: 60%;
+    left: 50%;
+    display: none;
+  }
+
+  .line {
+    width: 120%;
+    height: 4px;
+    background: coral;
+    position: absolute;
+    top: 60px;
+    left: -5%;
+    transform: rotateZ(-30deg);
+    transform-origin: 0 0;
+    // display: none;
+  }
+  .dot {
+    // background: coral;
+    width: 30px;
+    height: 30px;
+    border-radius: 90px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    opacity: 1;
+    border: 4px solid coral;
+    // display: none;
+  }
+
+  .frame {
+    width: 66.666%;
+    height: 15%;
+    border: 4px solid #2a7e70;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    // transform: rotateZ(-30deg);
+  }
+}
+
+.icon3 {
+  .koleno {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($green,  15%);
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        left: -#{$i * 15%}
+      }
+    }
+  }
+}
+
+.icon4 {
+  .koleno {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($green,  15%);
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        transform: rotateZ($i * 10deg);
+        left: -#{$i * 15%}
+      }
+    }
+  }
+}
+
+.icon5 {
+  .koleno {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($green,  15%);
+    transform: rotateZ(45deg);
+    border-radius: 5px;
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        left: -#{$i * 15% + 10%}
+      }
+    }
+  }
+}
+.icon6 {
+  .koleno {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($green,  15%);
+    border-radius: 5px;
+    @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      left: #{$i * 10% + 10%};
+      top: #{$i * 20%}
+    }
+  }
+  }
+}
+
+.icon7 {
+  .koleno {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($green,  25%);
+    border-radius: 5px;
+    left: 15%;
+    top: 33%;
+  }
+
+  .koleno1 {
+    left: 33%;
+    top: -33%;
+  }
+}
+
+
+.icon8 {
+  .koleno {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: $coral;
+    left: 33%;
+    top: -66%;
+  }
+}
+.icon9 {
+  .koleno {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: $coral;
+    left: 33%;
+    top: -66%;
+  }
+  .koleno1 {
+    position: absolute;
+    width: 33%;
+    height: 50%;
+    border-radius: 10px;
+    background: rgba($green, 25%);
+    top: 66%;
+    right: 15%;
+  }
+}
+
+.icon10 {
+  .koleno {
+    position: absolute;
+    width: 54%;
+    height: 50%;
+    background: rgba($green, 25%);
+    left: -10%;
+    top: 25%;
+    border-radius: 10px;
+  }
+  .koleno1 {
+    right: -10%;
+    left: auto;
+  }
+}
+
+.icon11 {
+  .koleno {
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    border-radius: 100%;
+    background: $coral;
+    left: 15%;
+    top: 25%;
+    transform: rotateZ(-60deg);
+  }
+  .koleno1 {
+    left: 50%;
+  }
+}
+
+.icon12 {
+  .koleno {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    border: 40px solid $coral;
+    left: -75%;
+    top: -75%;
+    transform: rotateZ(-60deg);
+  }
+}
+
+.icon13 {
+  .koleno {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: $coral;
+    left: 25%;
+    top: 25%;
+    transform: rotateZ(45deg);
+    transform-origin: 0 0;
+  }
+
+  .hueno {
+    position: absolute;
+    width: 100%;
+    height:20%;
+    background: rgba($green, .25);
+    left: 25%;
+    top:55%;
+    //transform: rotateZ(-45deg);
+    transform-origin: 0 0;
+  }
+}
+
+
+.icon14 {
+  .fon {
+    background: rgba($green, .25);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+  .koleno {
+    position: absolute;
+    width: 120%;
+    height: 4px;
+    background: $coral;
+    left: 25%;
+    top: 25%;
+    transform: rotateZ(45deg);
+    transform-origin: 0 0;
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        background: mix($green, $coral, 100 * ($i / 5));
+        left: 25%;
+        top: 25% + $i * 10;
+        transform: rotateZ(45deg);
+        transform-origin: 0 0;
+      }
+    }
+  }
+}
+
+
+.icon15 {
+  .koleno {
+    opacity: .5;
+    border-radius: 8px;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transform: rotateZ(45deg);
+    transform-origin: 0 0;
+    left: 25%;
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        background: mix($coral, $green, 100 * ($i / 5));
+        top: 1 + $i * 14.1%;
+      }
+    }
+  }
+}
+
+.icon16 {
+  .koleno {
+    opacity: .5;
+    border-radius: 6px;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    transform: translateY(-50%) rotateZ(45deg);
+    top: 50%;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        background: mix($coral, $green, 100 * ($i / 6));
+        left: -19.3 + $i * 14.1%;
+      }
+    }
+  }
+}
+
+.icon17 {
+  box-sizing: border-box;
+  $offset: 24.5%;
+  .koleno {
+    border-radius: 8px;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    transform: translateY(-50%) rotateZ(45deg);
+    top: 50%;
+    left: $offset;
+    border: 4px solid rgba($green, 8%);
+
+    &:nth-child(2) {
+      border: 4px solid $coral;
+      background: transparent;
+      right: $offset;
+      left: auto;
+    }
+  }
+}
+
+
+.icon18 {
+  background: linear-gradient(to top, $coral, lighten($green, 20%));
+  .koleno {
+    position: absolute;
+    border-radius: 100%;
+    width: 30%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+    background: white;
+  }
+  .kolobok {
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: -50%;
+  }
+}
+
+.icon19 {
+  .koleno {
+    position: absolute;
+    background: linear-gradient(45deg, $coral, lighten($green, 20%));
+    border-radius: 100%;
+    width: 75%;
+    height: 75%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+  .kolobok {
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    width: 60%;
+    height: 60%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+}
