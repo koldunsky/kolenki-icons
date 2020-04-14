@@ -337,7 +337,6 @@ $green: #2a7e70;
   }
 }
 
-
 .icon15 {
   .koleno {
     opacity: .5;
@@ -350,7 +349,7 @@ $green: #2a7e70;
     left: 25%;
     @for $i from 1 through 5 {
       &:nth-child(#{$i}) {
-        background: mix($coral, $green, 100 * ($i / 5));
+        background: mix($coral, lighten($green, 20%), 100 * ($i / 5));
         top: 1 + $i * 14.1%;
       }
     }
@@ -368,7 +367,7 @@ $green: #2a7e70;
     top: 50%;
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
-        background: mix($coral, $green, 100 * ($i / 6));
+        background: mix($coral, lighten($green, 20%), 100 * ($i / 6));
         left: -19.3 + $i * 14.1%;
       }
     }
@@ -445,5 +444,27 @@ $green: #2a7e70;
     top: 0;
     left: 0;
     margin: auto;
+  }
+}
+
+
+.icon20 {
+  .koleno {
+    position: absolute;
+    background: linear-gradient(45deg, $coral, lighten($green, 20%));
+    border-radius: 100%;
+    width: 70%;
+    height: 70%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+    border: 4px solid white;
+    &:nth-child(1) {
+      left: 50%;
+      background: coral;
+      border-radius: 0;
+    }
   }
 }
