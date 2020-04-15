@@ -1,31 +1,48 @@
 $scale: .25;
 
+html {
+  font-size: 4px;
+}
+
 body,
 html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
   display: flex;
   background: #444;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  flex-direction: column;
+}
+
+.select {
+  order: 2;
 }
 
 .container {
-  transform: scale($scale);
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 100% / $scale;
+  width: 350px;
+  max-width: 100%;
+  padding: 50rem 0;
 }
 
 .icon {
-  width: 180px;
-  height: 180px;
+  transform: scale($scale);
+  width: 45rem;
+  height: 45rem;
   background: white;
-  border-radius: 30px;
+  border-radius: 8rem;
   position: relative;
   overflow: hidden;
-  margin: 60px;
-  flex: 0 0 180px;
+  margin: 15rem;
+  flex: 0 0 45rem;
+  margin: -50px;
 }
+

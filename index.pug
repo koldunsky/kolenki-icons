@@ -4,8 +4,13 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(rel="stylesheet" href="./styles.scss")
+        script(src="./z.js")
         title Document
     body
+        select#select.select
+            option(value=25) 25%
+            option(value=50) 50%
+            option(value=100) 100%
         .container
             .icon.icon1
                 .line
@@ -85,5 +90,5 @@ html(lang="en")
                 .kolobok
 
             .icon.icon20
-                each val, i in i3arr
-                    .koleno
+                .koleno
+                .koleno

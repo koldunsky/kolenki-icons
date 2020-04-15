@@ -5,13 +5,11 @@ $green: #2a7e70;
 
 .icon1 {
   .koleno {
-    width: 400px;
-    height: 400px;
+    width: 400%;
+    height: 400%;
     position: absolute;
     top: -5%;
     left: 12%;
-    border-radius: 5px;
-    box-shadow: 0 0 8px #2a7e70 inset;
     background: lighten(#2a7e70, 20%);
     opacity: 0.3;
     transform: rotate(60deg);
@@ -32,21 +30,21 @@ $green: #2a7e70;
 
   .line {
     width: 100%;
-    height: 3px;
+    height: 1rem;
     background: coral;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     display: none;
   }
   .dot {
     background: coral;
-    width: 90px;
-    height: 90px;
-    border-radius: 90px;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 22rem;
     position: absolute;
-    top: calc(50% - 45px);
-    left: calc(50% - 45px);
+    top: calc(50% - 11rem);
+    left: calc(50% - 11rem);
     opacity: 0.8;
     // display: none;
   }
@@ -54,7 +52,7 @@ $green: #2a7e70;
   .frame {
     width: 66.666%;
     height: 15%;
-    border: 4px solid #2a7e70;
+    border: 1rem solid #2a7e70;
     position: absolute;
     top: 0;
     left: 0;
